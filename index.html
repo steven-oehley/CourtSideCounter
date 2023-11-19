@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>CourtSideCounter</title>
+  </head>
+  <body>
+    <section class="scores">
+      <div class="home">
+        <h2>Home</h2>
+        <div id="home-score" class="score-box">0</div>
+        <div class="buttons">
+          <button class="home" id="home-plus-one">+1</button>
+          <button class="home" id="home-plus-two">+2</button>
+          <button class="home" id="home-plus-three">+3</button>
+        </div>
+      </div>
+      <div id="winning">Good luck to both teams!</div>
+      <div class="away">
+        <h2>Away</h2>
+        <div id="away-score" class="score-box">0</div>
+        <div class="buttons">
+          <button class="away" id="away-plus-one">+1</button>
+          <button class="away" id="away-plus-two">+2</button>
+          <button class="away" id="away-plus-three">+3</button>
+        </div>
+      </div>
+    </section>
+    <section class="game-buttons">
+      <button class="reset">RESET<span>(Double Click)</span></button>
+      <button class="save">SAVE<span>(Double Click)</span></button>
+    </section>
+    <section class="scores">
+      <table class="game-table hidden-table">
+        <thead>
+          <tr>
+            <th>Home Score</th>
+            <th>Away Score</th>
+            <th>Game End Date</th>
+            <th>Message</th>
+          </tr>
+        </thead>
+        <tbody class="table"></tbody>
+      </table>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>

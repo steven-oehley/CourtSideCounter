@@ -1,0 +1,131 @@
+@font-face {
+  font-family: "cursed-timer";
+  src: url("./assets/fonts/CursedTimerUlil-Aznm.ttf");
+}
+
+/* CSS Reset */
+
+* {
+  box-sizing: border-box;
+}
+
+/* CSS Variables */
+
+:root {
+  --body-background: #1b244a;
+  --score-background: #080001;
+  --h2-color: #eee;
+  --button-color: #9aabd8;
+  --score-color: #f94f6d;
+}
+
+/* GENERAL */
+
+body {
+  margin: 0;
+  background-color: var(--body-background);
+}
+
+.scores {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+h2 {
+  color: var(--h2-color);
+  font-size: 40px;
+  text-align: center;
+}
+
+/* SCORE BOX */
+
+.score-box {
+  background-color: var(--score-background);
+  color: var(--score-color);
+  font-family: "cursed-timer";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 120px;
+  padding: 20px 60px;
+}
+
+.emoji {
+  font-size: 32px;
+}
+
+#winning {
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  color: var(--button-color);
+  font-weight: 700;
+  font-size: 22px;
+}
+
+/* Buttons */
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 12px;
+}
+
+.buttons .home,
+.buttons .away {
+  font-family: "cursed-timer";
+  background-color: var(--body-background);
+  color: var(--button-color);
+  border: 2px solid var(--button-color);
+  padding: 10px 20px;
+  font-size: 20px;
+}
+
+/* GAME BUTTONS */
+
+.game-buttons {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.game-buttons button {
+  padding: 15px 30px;
+  font-size: 20px;
+  background-color: var(--score-color);
+  color: var(--h2-color);
+  border: 1px solid var(--button-color);
+  font-weight: 700;
+}
+
+span {
+  display: block;
+  font-size: 12px;
+}
+
+.game-table,
+th,
+td {
+  border: 1px solid var(--button-color);
+  color: var(--button-color);
+}
+
+th,
+td {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.scores {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.hidden-table {
+  display: none;
+}
