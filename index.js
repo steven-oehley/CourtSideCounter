@@ -45,7 +45,31 @@ homePlusOne.addEventListener("click", () => {
   homeScore.innerHTML = parseInt(homeScore.innerHTML) + 1;
   checkWinning();
 });
-// (Repeat for other score increment buttons)
+
+homePlusTwo.addEventListener("click", () => {
+  homeScore.innerHTML = parseInt(homeScore.innerHTML) + 2;
+  checkWinning();
+});
+
+homePlusThree.addEventListener("click", () => {
+  homeScore.innerHTML = parseInt(homeScore.innerHTML) + 3;
+  checkWinning();
+});
+
+awayPlusOne.addEventListener("click", () => {
+  awayScore.innerHTML = parseInt(awayScore.innerHTML) + 1;
+  checkWinning();
+});
+
+awayPlusTwo.addEventListener("click", () => {
+  awayScore.innerHTML = parseInt(awayScore.innerHTML) + 2;
+  checkWinning();
+});
+
+awayPlusThree.addEventListener("click", () => {
+  awayScore.innerHTML = parseInt(awayScore.innerHTML) + 3;
+  checkWinning();
+});
 
 // Function to reset scores and winning message
 const resetScores = () => {
